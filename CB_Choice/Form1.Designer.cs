@@ -50,6 +50,7 @@
             this.txtList.Name = "txtList";
             this.txtList.Size = new System.Drawing.Size(120, 21);
             this.txtList.TabIndex = 1;
+            this.txtList.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.TxtList_KeyPress);
             // 
             // btnAdd
             // 
@@ -59,6 +60,7 @@
             this.btnAdd.TabIndex = 2;
             this.btnAdd.Text = "추가";
             this.btnAdd.UseVisualStyleBackColor = true;
+            this.btnAdd.Click += new System.EventHandler(this.BtnAdd_Click);
             // 
             // lblResult
             // 
